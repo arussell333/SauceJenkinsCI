@@ -35,7 +35,7 @@ public class SauceJenkinsTest {
 //		caps.setCapability("fullReset", true);
 		caps.setCapability("appPackage", "com.bmw.remote");
 		caps.setCapability("appActivity", "base.ui.commonwidgets.StartupActivity");
-		AndroidDriver driver= new AndroidDriver(new URL("http://arussell333:a5a8a714-4ab8-40e5-93b0-462a6912b78e@ondemand.saucelabs.com:80/wd/hub"),caps);
+		driver= new AndroidDriver(new URL("http://arussell333:a5a8a714-4ab8-40e5-93b0-462a6912b78e@ondemand.saucelabs.com:80/wd/hub"),caps);
 		
 		driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"com.bmw.remote:id/disclaimer_btn_ok\").text(\"Accept\")").click();
         driver.findElementByAndroidUIAutomator("new UiSelector().resourceId(\"com.bmw.remote:id/username\")").sendKeys("arussell333@gmail.com");
