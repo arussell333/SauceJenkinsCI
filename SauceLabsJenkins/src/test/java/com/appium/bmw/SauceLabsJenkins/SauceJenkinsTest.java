@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 public class SauceJenkinsTest {
 
@@ -21,6 +22,9 @@ public class SauceJenkinsTest {
 		caps.setCapability("deviceName","HTC Evo 3D Emulator");
 		caps.setCapability("deviceOrientation", "portrait");
 		caps.setCapability("browserName", "");
+		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "appium");
+		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, System.getProperty("PlatformName"));
+		caps.setCapability(MobileCapabilityType.DEVICE_NAME, System.getProperty("DeviceName"));
 		caps.setCapability("platformVersion","4.0");
 		caps.setCapability("platformName","Android");
 		caps.setCapability("app","sauce-storage:My_BMW_Remote.apk");
