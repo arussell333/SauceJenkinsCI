@@ -25,7 +25,7 @@ public class SauceJenkinsTest {
 		caps.setCapability("appiumVersion", "1.5.1");
 		caps.setCapability("deviceOrientation", "portrait");
 		caps.setCapability("browserName", "");
-		caps.setCapability("deviceName","Google Nexus 7 HD Emulator");
+		caps.setCapability("deviceName","Samsung Galaxy S4 Emulator");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, System.getProperty("PlatformName"));
 		caps.setCapability("platformVersion","4.4");
 		caps.setCapability("app","sauce-storage:My_BMW_Remote.apk");
