@@ -15,7 +15,6 @@
         <version>2.19.1</version>
         <configuration>
           <PlatformName>${value}</PlatformName>
-          <DeviceName>${value}</DeviceName>
         </configuration>
       </plugin>
     </plugins>

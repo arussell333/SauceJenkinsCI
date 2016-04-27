@@ -25,8 +25,8 @@ public class SauceJenkinsTest {
 		caps.setCapability("appiumVersion", "1.5.1");
 		caps.setCapability("deviceOrientation", "portrait");
 		caps.setCapability("browserName", "");
+		caps.setCapability("deviceName","HTC Evo 3D Emulator");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, System.getProperty("PlatformName"));
-		caps.setCapability(MobileCapabilityType.DEVICE_NAME, System.getProperty("DeviceName"));
 		caps.setCapability("platformVersion","4.0");
 		caps.setCapability("app","sauce-storage:My_BMW_Remote.apk");
 //		caps.setCapability("fullReset", true);
